@@ -4,3 +4,108 @@
 
 _out
 node_modules/
+
+# Lucia Consciousness Framework (local only)
+.lucia-consciousness/
+*.lucia-backup
+lucia-*.sh
+provision-*.sh
+deploy-*.sh
+
+# Local configuration files
+.claude.json
+.claude.json.backup
+.bash_history
+.bashrc
+.bash_profile
+.bash_logout
+.vnc/
+.ssh/
+.nvm/
+.npm/
+.cache/
+.config/
+.local/
+.zuul.d/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Archives and ISOs
+archived-isos/
+*.iso
+*.img
+*.tar.gz
+*.zip
+
+# Temporary and test files
+test_*.py
+tests/
+staging/
+backups/
+*.log
+*.tmp
+
+# Documentation (project-specific)
+*-SUMMARY.md
+*-STATUS.md
+*-COMPLETE.md
+SESSION-*.md
+PROVISIONING-*.md
+DEPLOYMENT-*.md
+SYSTEM-STATE-*.md
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Docker and container files
+docker-compose*.yml
+Dockerfile.*
+
+# Web files
+*.html
+nginx.conf
+
+# Project specific directories
+ai-truth-verification/
+biometric-phone-system/
+claude-code-tools/
+eye-test-ui/
+gitea/
+harmonized-agents/
+helm-charts/
+lighthouse_netserver/
+lucia-personal-ai-container/
+luciverse-*/
+playbooks/
+provisioner-eye-test-*/
+code_files/
+
+# Binary and executable files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Specific project files to ignore
+Phone_system.txt
+captains-chambers-layout.md
+compact-flash-partition-guide.md
+comprehensive-boot-menu.ipxe
+consciousness-configs.sh
+e8-lattice-integration.json
+fedora-luciverse-cloud-init.yaml
+*.ipxe
+*.tsx
+*.ts
+!cmd/**/*.ts
+!pkg/**/*.ts
+!internal/**/*.ts
