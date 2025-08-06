@@ -22,3 +22,21 @@ jobs:
           # Optional: Add custom configuration
           # allowed_tools: "Bash(git:*),View,GlobTool,GrepTool,BatchTool"
           # max_turns: "10"
+- name: Run Claude Code Action
+  uses: anthropics/claude-code-action@beta
+  with:
+    anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+    
+    # Tool permissions
+    allowed_tools: "Bash(git:*),View,GlobTool,GrepTool,BatchTool"
+    
+    # Maximum conversation turns
+    max_turns: "10"
+    
+    # Custom system prompt
+    system_prompt: |
+      You are a helpful coding assistant for the Image Factory project.
+      Follow the project's coding standards and best practices.
+    
+    # Direct prompt (if not triggered by comment)
+    direct_prompt: "Review the recent changes and suggest improvements"
