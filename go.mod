@@ -25,7 +25,7 @@ require (
 	github.com/slok/go-http-metrics v0.13.0
 	github.com/stretchr/testify v1.10.0
 	github.com/u-root/u-root v0.14.0
-	github.com/ulikunitz/xz v0.5.12
+	github.com/ulikunitz/xz v0.5.14
 	go.uber.org/zap v1.27.0
 	golang.org/x/net v0.42.0
 	golang.org/x/sync v0.16.0
